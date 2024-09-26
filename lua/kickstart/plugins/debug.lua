@@ -27,35 +27,35 @@ return {
       {
         '<F5>',
         function()
-          return require('dap').continue
+          return require('dap').continue()
         end,
         desc = 'Debug: Start/Continue',
       },
       {
         '<F1>',
         function()
-          return require('dap').step_into
+          return require('dap').step_into()
         end,
         desc = 'Debug: Step Into',
       },
       {
         '<F2>',
         function()
-          return require('dap').step_over
+          return require('dap').step_over()
         end,
         desc = 'Debug: Step Over',
       },
       {
         '<F3>',
         function()
-          return require('dap').step_out
+          return require('dap').step_out()
         end,
         desc = 'Debug: Step Out',
       },
       {
         '<leader>b',
         function()
-          return require('dap').toggle_breakpoint
+          return require('dap').toggle_breakpoint()
         end,
         desc = 'Debug: Toggle Breakpoint',
       },
@@ -70,7 +70,7 @@ return {
       {
         '<F7>',
         function()
-          return require('dapui').toggle
+          return require('dapui').toggle()
         end,
         desc = 'Debug: See last session result.',
       },
